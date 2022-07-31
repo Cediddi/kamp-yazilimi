@@ -128,6 +128,7 @@ SECRET_KEY = DJANGOSETTINGS.getsecretkey()
 DEBUG = os.getenv("MUDUR_DEBUG", "false").lower() == 'true'
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://kayit.linux.org.tr/']
 
 # Application definition
 REQUIRE_UNIQUE_EMAIL = False
